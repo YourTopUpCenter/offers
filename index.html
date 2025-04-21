@@ -1,171 +1,970 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <title>Offers - Your TopUp Center | FF Diamond Store BD </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover exclusive offers and unbeatable discounts on digital top-ups, game recharges, subscriptions, and more. Save big with our latest deals at Your TopUp Center – your best online partner for affordable digital services. | আপনার বিশ্বস্ত অনলাইন ডিজিটাল গেম স্টোর Your TopUp Center  - এ আপনার প্রিয় গেম ক্রেডিট টপ-আপ করুন । ">
-    <meta name="keywords" content="Your TopUp Center, #ytc24, topup, free fire, gaming,  seller, game offers, discounts, top-up deals, free fire offers, gaming discounts, special offers, Your TopUp Center, top-up deals, #ytc24, cheap game credits">
-    <meta name="author" content="Ali Hosen">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Your TopUp Center">
-    <meta property="og:title" content="Exclusive Game Offers - Top Discounts & Deals | Your TopUp Center">
-    <meta property="og:image" content="https://i.postimg.cc/Qx3wdSvM/Adobe-Express-20231213-2151070-1.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="https://i.postimg.cc/mD3qYHH4/Picsart-24-01-20-22-35-57-863.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Changed Title for the Offers Page -->
+    <title>Offers - Your TopUp Center</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Cabin:ital,wght@0,400..700;1,400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-    
-    
-    
-    <!---উপরের কিছু Edit করা লাগবে না---->
-    
+<link href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap" rel="stylesheet">
     <style>
-       
+      
+
+        :root {
+            --primary-color: #006eff;
+            --secondary-color: #5a6a7e;
+            --success-color: #20c997;
+            --danger-color: #dc3545;
+            --warning-color: #ffc107;
+            --info-color: #17a2b8;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --white-color: #ffffff;
+            --body-font: 'Mina', sans-serif;
+            --heading-font: 'Mina', sans-serif;
+            --transition-speed: 0.3s ease;
+            --border-radius: 8px;
+            --box-shadow-light: 0 4px 15px rgba(0, 0, 0, 0.06);
+            --box-shadow-medium: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; overflow-x: hidden; }
+        body {
+            font-family: var(--body-font);
+            line-height: 1.7;
+            color: var(--dark-color);
+            background-color: var(--white-color);
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--heading-font);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            line-height: 1.3;
+        }
+        a { text-decoration: none; color: var(--primary-color); transition: color var(--transition-speed); }
+        a:hover { color: #004bbd; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+        section { padding: 70px 0; position: relative; overflow: hidden; }
+        /* Specific background for offers page section */
+        #offers-page-section {
+             background-color: #f7faff; /* Consistent light background */
+             padding-top: 40px; /* Less top padding */
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #333;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        .section-title i { color: var(--primary-color); margin-right: 10px; font-size: 2rem; vertical-align: middle; }
+        .section-title::after {
+            content: ''; position: absolute; display: block; width: 80px; height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--info-color));
+            bottom: 0; left: 50%; transform: translateX(-50%); border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block; padding: 12px 30px;
+            background-image: linear-gradient(45deg, var(--primary-color) 0%, #007bff 100%);
+            color: var(--white-color); border: none; border-radius: 50px;
+            font-size: 1rem; font-weight: 600; cursor: pointer; transition: all var(--transition-speed);
+            box-shadow: 0 5px 15px rgba(0, 110, 255, 0.3); text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .btn:hover {
+            background-image: linear-gradient(45deg, #0056b3 0%, var(--primary-color) 100%);
+            transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 110, 255, 0.4);
+        }
+        .btn i { margin-left: 8px; }
+
+        /* --- Header Styles (Same as index.html) --- */
+        #main-header {
+            background-color: rgba(255, 255, 255, 0.97); backdrop-filter: blur(8px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); padding: 12px 0;
+            position: sticky; top: 0; z-index: 1000;
+            transition: background-color var(--transition-speed), padding var(--transition-speed);
+        }
+        body.scrolled #main-header { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
+        #main-header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo a {
+            font-size: 1.9rem; font-weight: 700; color: var(--primary-color);
+            display: flex; align-items: center; transition: transform var(--transition-speed);
+        }
+        .logo a:hover { transform: scale(1.03); }
+        .logo a i { margin-right: 10px; color: var(--success-color); font-size: 1.5rem; animation: rotateIcon 5s linear infinite; }
+        #main-nav ul { display: flex; }
+        #main-nav ul li { margin-left: 30px; }
+        #main-nav ul li a {
+            color: var(--dark-color); font-weight: 600; padding: 8px 0;
+            position: relative; transition: color var(--transition-speed); letter-spacing: 0.3px;
+        }
+        #main-nav ul li a.active { color: var(--primary-color); font-weight: 700; }
+        #main-nav ul li a.active::after, #main-nav ul li a:hover::after {
+            content: ''; position: absolute; width: 100%; height: 3px; display: block;
+            margin-top: 6px; left: 0; background: var(--primary-color);
+            transition: width 0.4s ease-out, left 0.4s ease-out; border-radius: 2px;
+        }
+        #main-nav ul li a::after {
+            content: ''; position: absolute; width: 0; height: 3px; display: block;
+            margin-top: 6px; right: 0; background: var(--primary-color);
+            transition: width 0.4s ease-out, left 0.4s ease-out; border-radius: 2px;
+        }
+        #main-nav ul li a:hover { color: var(--primary-color); }
+        .menu-toggle { display: none; font-size: 1.8rem; cursor: pointer; color: var(--dark-color); transition: color var(--transition-speed); }
+        .menu-toggle:hover { color: var(--primary-color); }
+
+        /* --- Offers Section Styles --- */
+        /* Reusing filter button styles */
+        .filter-buttons { text-align: center; margin-bottom: 40px; }
+        .filter-buttons button {
+            background-color: var(--white-color); color: var(--dark-color); border: 1px solid #ddd;
+            padding: 10px 25px; margin: 5px 8px; border-radius: 50px; cursor: pointer;
+            transition: all var(--transition-speed); font-weight: 500; box-shadow: var(--box-shadow-light);
+        }
+        .filter-buttons button:hover { background-color: #e9ecef; border-color: #ccc; transform: translateY(-2px); }
+        .filter-buttons button.active {
+            background-color: var(--primary-color); color: var(--white-color); border-color: var(--primary-color);
+            box-shadow: 0 4px 10px rgba(0, 110, 255, 0.3); transform: translateY(-2px);
+        }
+        .filter-buttons button i { margin-right: 5px; }
+
+        /* Grid for offers - reusing product grid class name for JS compatibility */
+        .offer-grid { /* Changed class name for clarity, ensure JS targets this if needed, or reuse product-grid */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly wider cards for offers */
+            gap: 35px;
+        }
+        /* Offer Item Styles - reusing product item class name for JS compatibility */
+        .offer-item { /* Changed class name for clarity */
+            background-color: var(--white-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow-light);
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+            display: flex;
+            flex-direction: column;
+            border-left: 5px solid var(--success-color); /* Accent border for offers */
+            opacity: 0; /* Start hidden for animation */
+            transform: scale(0.95);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+        .offer-item.show { /* Class added by JS filter */
+             opacity: 1;
+             transform: scale(1);
+        }
+        .offer-item.hide { /* Class added by JS filter */
+             opacity: 0;
+             transform: scale(0.95);
+             pointer-events: none;
+             order: 1; /* Move hidden items */
+             /* display: none; Alternative */
+        }
+
+        .offer-item:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--box-shadow-medium);
+        }
+        .offer-item img {
+            width: 100%;
+            height: 180px; /* Slightly shorter image for offers */
+            object-fit: cover;
+        }
+        .offer-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .offer-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+         .offer-content h3 i {
+             margin-right: 8px;
+             color: var(--success-color);
+         }
+        .offer-content p {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        .offer-validity, .offer-terms {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            margin-top: auto; /* Push to bottom */
+            margin-bottom: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed #eee; /* Separator */
+        }
+        .offer-validity i, .offer-terms i {
+            margin-right: 5px;
+            color: var(--info-color);
+        }
+        .offer-discount {
+            display: inline-block;
+            background-color: var(--danger-color);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            align-self: flex-start; /* Align discount badge */
+        }
+        .offer-item .btn {
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+            font-size: 0.95rem;
+            margin-top: 10px;
+        }
+        
+        
+        
+        
+      .support-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1010; /* Ensure above other elements */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .support-main-btn {
+            width: 65px;
+            height: 65px;
+            background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--info-color) 100%);
+            color: var(--white-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.9rem;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(0, 110, 255, 0.4);
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), box-shadow var(--transition-speed); /* Added cubic-bezier for bounce */
+            z-index: 1011;
+            border: 3px solid var(--white-color); /* White border */
+            position: relative; /* Needed for icon transition */
+            overflow: hidden; /* Clip icons during transition */
+            animation: pulse 2.5s infinite ease-in-out; /* Subtle pulse */
+        }
+        .support-main-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0, 110, 255, 0.5);
+            animation-play-state: paused; /* Pause pulse on hover */
+        }
+        .support-main-btn i { /* Icon transition */
+            position: absolute;
+            transition: transform 0.4s ease-out, opacity 0.3s ease-out;
+        }
+        .support-main-btn .fa-headset {
+            transform: rotate(0deg) scale(1);
+            opacity: 1;
+        }
+        .support-main-btn .fa-times {
+            transform: rotate(-90deg) scale(0.8);
+            opacity: 0;
+        }
+        .support-main-btn.active .fa-headset {
+            transform: rotate(90deg) scale(0.8);
+            opacity: 0;
+        }
+        .support-main-btn.active .fa-times {
+            transform: rotate(0deg) scale(1);
+            opacity: 1;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 6px 18px rgba(0, 110, 255, 0.4), 0 0 0 0 rgba(0, 110, 255, 0.4); }
+            70% { box-shadow: 0 6px 18px rgba(0, 110, 255, 0.4), 0 0 0 10px rgba(0, 110, 255, 0); }
+            100% { box-shadow: 0 6px 18px rgba(0, 110, 255, 0.4), 0 0 0 0 rgba(0, 110, 255, 0); }
+        }
+
+        .support-options {
+            position: absolute; /* Position relative to main button */
+            bottom: 80px; /* Start position above the main button */
+            right: 7.5px; /* Center options relative to main button width (65/2 - 50/2) */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            /* Initial hidden state */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+            pointer-events: none; /* Prevent clicks when hidden */
+        }
+
+        .support-options.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        .support-options.active .support-option {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            visibility: visible;
+        }
+
+        .support-option {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: var(--white-color);
+            box-shadow: var(--box-shadow-medium);
+            text-decoration: none;
+            position: relative; /* Needed for tooltip */
+             /* Initial state for staggered animation */
+            opacity: 0;
+            transform: translateY(15px) scale(0.8);
+            visibility: hidden;
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.3s ease-out, visibility 0.3s ease-out, box-shadow var(--transition-speed), background-color var(--transition-speed);
+        }
+
+        /* Staggered Animation Delays */
+        .support-options.active .support-option:nth-child(1) { transition-delay: 0.25s; }
+        .support-options.active .support-option:nth-child(2) { transition-delay: 0.2s; }
+        .support-options.active .support-option:nth-child(3) { transition-delay: 0.15s; }
+        .support-options.active .support-option:nth-child(4) { transition-delay: 0.1s; }
+
+        .support-option:hover {
+            transform: scale(1.18) rotate(5deg); /* Enhanced hover */
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Tooltip Styles */
+        .support-option::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            right: 110%; /* Position to the left */
+            top: 50%;
+            transform: translateY(-50%) scale(0.8); /* Start slightly smaller */
+            background-color: rgba(44, 62, 80, 0.9); /* Dark background */
+            color: var(--white-color);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity var(--transition-speed), transform var(--transition-speed);
+            pointer-events: none;
+        }
+        .support-option:hover::before {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) scale(1); /* Scale up */
+        }
+
+        /* Specific colors for support options */
+        .support-option.whatsapp { background-color: #25D366; }
+        .support-option.messenger { background-color: #0084FF; }
+        .support-option.call { background-color: var(--danger-color); }
+        .support-option.telegram { background-color: #2AABEE; }
+
+        /* --- Fixed Ad Banner Styles (Advanced) --- */
+        .fixed-ad-banner {
+            position: fixed;
+            bottom: 25px;
+            left: -400px; /* Start off-screen */
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.92), rgba(52, 73, 94, 0.95)); /* Darker gradient */
+            backdrop-filter: blur(6px);
+            color: var(--white-color);
+            padding: 12px 45px 12px 20px; /* More padding */
+            border-radius: 0 var(--border-radius) var(--border-radius) 0; /* Rounded right corners */
+            box-shadow: var(--box-shadow-medium);
+            z-index: 999;
+            max-width: 320px;
+            font-size: 0.9rem;
+            opacity: 1;
+             /* Animation */
+            animation: slideInAd 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 1.5s forwards; /* Slide in after 1.5s delay */
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth slide out */
+        }
+        /* Hidden state */
+        .fixed-ad-banner.hidden {
+             opacity: 0;
+             transform: translateX(-110%); /* Slide fully out */
+             pointer-events: none;
+        }
+
+        @keyframes slideInAd {
+            from { left: -400px; }
+            to { left: 0; } /* Slide in to position */
+        }
+
+        .ad-content {
+            display: flex; /* Use flex for icon and text */
+            align-items: center;
+            gap: 10px;
+            line-height: 1.5;
+        }
+        .ad-content i { /* Ad icon */
+            font-size: 1.5rem;
+            color: var(--warning-color);
+            flex-shrink: 0; /* Prevent icon from shrinking */
+        }
+        .ad-content a { color: var(--warning-color); font-weight: 600; text-decoration: underline; }
+        .ad-close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.3rem; /* Larger close icon */
+            cursor: pointer;
+            padding: 5px;
+            line-height: 1;
+            transition: color var(--transition-speed), transform var(--transition-speed);
+        }
+        .ad-close-btn:hover {
+            color: var(--white-color);
+            transform: rotate(90deg);
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 768px) {
+            .support-widget { bottom: 15px; right: 15px; }
+            .support-main-btn { width: 60px; height: 60px; font-size: 1.7rem; }
+            .support-option { width: 45px; height: 45px; font-size: 1.4rem; }
+            .support-options { bottom: 75px; right: 7.5px; gap: 12px; }
+            .support-option::before { display: none; } /* Hide tooltips on smaller screens */
+
+            .fixed-ad-banner { left: -400px; bottom: 15px; padding: 10px 40px 10px 15px; font-size: 0.85rem; max-width: 280px;}
+            .ad-close-btn { font-size: 1.1rem; top: 4px; right: 4px;}
+
+      
+        }
+        @media (max-width: 480px) {
+             .support-widget { bottom: 10px; right: 10px; }
+             .support-main-btn { width: 55px; height: 55px; font-size: 1.6rem; }
+             .support-option { width: 40px; height: 40px; font-size: 1.3rem; }
+             .support-options { bottom: 70px; right: 7.5px; gap: 10px; }
+
+             .fixed-ad-banner { left: -400px; bottom: 10px; max-width: calc(100vw - 20px); border-radius: var(--border-radius); /* Standard radius on small screens */ }
+        }
+
+        /* --- Animations (Keep from previous) --- */
+        @keyframes rotateIcon { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .fade-inX { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @keyframes fadeInDownX { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUpX { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+      
+      
+        
+
+        /* --- Footer Styles (Same as index.html) --- */
+         #main-footer {
+            background-color: #2c3e50; color: rgba(255, 255, 255, 0.8);
+            padding: 60px 0 20px; margin-top: 70px;
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px; margin-bottom: 40px;
+        }
+        .footer-widget h4 {
+            color: var(--white-color); font-size: 1.2rem; margin-bottom: 20px;
+            position: relative; padding-bottom: 10px; font-weight: 600;
+        }
+        .footer-widget h4::after {
+            content: ''; position: absolute; left: 0; bottom: 0; height: 2px; width: 40px;
+            background-color: var(--primary-color);
+        }
+        .footer-widget p { font-size: 0.95rem; line-height: 1.8; margin-bottom: 15px; }
+        .footer-widget ul li { margin-bottom: 12px; }
+        .footer-widget ul li a {
+            color: rgba(255, 255, 255, 0.8); font-size: 0.95rem;
+            transition: color var(--transition-speed), padding-left var(--transition-speed);
+        }
+        .footer-widget ul li a:hover { color: var(--white-color); padding-left: 5px; }
+        .footer-widget ul li a i { margin-right: 8px; width: 15px; color: var(--primary-color); }
+        .footer-contact-info i { margin-right: 10px; color: var(--primary-color); width: 20px; text-align: center; }
+        .footer-social-links a {
+            color: rgba(255, 255, 255, 0.8); font-size: 1.4rem; margin-right: 15px;
+            transition: color var(--transition-speed), transform var(--transition-speed); display: inline-block;
+        }
+        .footer-social-links a:hover { color: var(--white-color); transform: scale(1.2); }
+        .footer-social-links a:last-child { margin-right: 0; }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 25px; text-align: center;
+            font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);
+        }
+        .footer-bottom a { color: var(--info-color); font-weight: 500; }
+        .footer-bottom a:hover { color: var(--white-color); text-decoration: underline; }
+
+        /* --- Animations --- */
+         @keyframes rotateIcon { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+         .fade-in {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+         }
+         .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* --- Responsive Design (Same as other pages) --- */
+        @media (max-width: 992px) {
+            :root { --border-radius: 6px; }
+            .section-title { font-size: 2rem; }
+            .offer-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+            .footer-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+        }
+        @media (max-width: 768px) {
+            h2 { font-size: 1.8rem; }
+            .section-title { font-size: 1.9rem; margin-bottom: 40px; }
+            section { padding: 50px 0; }
+            #offers-page-section { padding-top: 30px; }
+
+            /* Mobile Navigation */
+            #main-nav {
+                display: none; position: absolute; top: 100%; left: 0; width: 100%;
+                background-color: var(--white-color); box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                flex-direction: column; max-height: 0; overflow: hidden;
+                transition: max-height 0.5s ease-out, box-shadow 0.5s ease-out;
+            }
+            #main-nav.active { display: flex; max-height: 500px; }
+            #main-nav ul { flex-direction: column; width: 100%; padding: 10px 0; }
+            #main-nav ul li { margin: 0; text-align: left; }
+            #main-nav ul li a { display: block; padding: 15px 25px; border-bottom: 1px solid #eee; }
+            #main-nav ul li:last-child a { border-bottom: none; }
+            #main-nav ul li a::after { display: none; }
+            #main-nav ul li a:hover { background-color: #f8f9fa; color: var(--primary-color); }
+            .menu-toggle { display: block; }
+
+            .footer-grid { grid-template-columns: 1fr; gap: 25px; }
+            .offer-grid { grid-template-columns: 1fr; gap: 25px; }
+            .footer-widget { text-align: center; }
+            .footer-widget h4::after { left: 50%; transform: translateX(-50%); }
+            .footer-contact-info li { text-align: center; justify-content: center;}
+            .footer-contact-info i { display: inline-block; width: auto; }
+            .filter-buttons button { padding: 8px 18px; font-size: 0.9rem; margin: 5px; }
+        }
+        @media (max-width: 576px) {
+             :root { --border-radius: 4px; }
+             .container { padding: 0 15px; }
+             section { padding: 40px 0; }
+             #offers-page-section { padding-top: 20px; }
+             .section-title { font-size: 1.7rem; margin-bottom: 30px;}
+             .section-title i { font-size: 1.6rem; }
+             .offer-content h3 { font-size: 1.2rem; }
+             .footer-grid { gap: 20px; }
+             .footer-widget h4 { font-size: 1.1rem; }
+             .footer-widget p, .footer-widget ul li a { font-size: 0.9rem; }
+             .footer-bottom { font-size: 0.85rem; }
+        }
     </style>
 </head>
-<body>
-    
-    
-    
+<body class="offers-page"> <!-- Add a class for potential page-specific styling -->
+
     <!-- Header -->
-<section class="header">
-    <nav id="navbar">
-        <a href="https://yourtopupcenter.github.io/home">
-            <img src="https://i.postimg.cc/Pxjg6DpL/Picsart-24-01-20-22-35-57-863.png">
-        </a>
-        <div class="nav-links">
-            <i class="fa fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
-            <ul id="navMenu">
-                <li><a href="https://yourtopupcenter.github.io/home">HOME</a></li>
-                <li><a href="https://yourtopupcenter.github.io/products">PRODUCTS</a></li>
-                <li><a href="https://yourtopupcenter.github.io/offers">OFFER</a></li>
-                <li><a href="https://yourtopupcenter.github.io/blogs">BLOGS</a></li>
-                <li><a href="https://yourtopupcenter.github.io/about">ABOUT</a></li>
-                <li><a href="https://yourtopupcenter.github.io/contact">CONTACT US</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="text-box">
-        <h1>Offers</h1>
-    </div>
-    <br><br>
-      <div class="scroll-down">
-        <div class="scroll-text">Scroll Down</div>
-        <div class="arrow"></div>
-    </div>
-</section>
-
-
-<!-- End Of Header -->
-    
-    
-    
-    
-    
-    
-    <!-- Error -->
-    
-    
-    
-    <section class="of">
-    <div class="containero">
-        <h1>Sorry, there are no offers available right now.</h1>
-        <p>Come Back Later !</p>
-        <div class="button-group">
-            <a href="/home" class="home-button">
-                <i class="fas fa-home"></i> Home
-            </a>
-            <a href="/products" class="shop-button">
-                <i class="fas fa-shopping-cart"></i> Go to Shop
-            </a>
-            <a href="javascript:history.back()" class="back-button">
-                <i class="fas fa-arrow-left"></i> Go Back
-            </a>
-        </div>
-    </div>
-    
-    </section>
-    <!-- End Of Erro -->
-    
-    
-    
-    
-    
-    
-    
-    <!-- Footer -->
-    
-    
-    
-<section class="mfooter">
-    
-    <footer class="footer">
-        <div class="company-info">
-            <img src="https://i.postimg.cc/xCB0dHGy/b295bb43-9ccd-47e2-aebd-900434a0a0fb.jpg" alt="Your TopUp Center">
-            <h1>Your TopUp Center</h1>
-        </div>
-        <div class="footer-container">
-            <div class="footer-section about-us">
-                <h2>About Us</h2>
-                <p id="fro">Top-up your favorite game credits at " Your TopUp Center " , your trusted online digital game store. You get your game credits fast in just 5 - 10 minutes. You can order by following just a few steps. Buy safely online with Nagad, bKash, Rocket. Our " Your TopUp Center " platform is a safe and reliable platform.</p>
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <!-- Link back to home page -->
+                <a href="index.html">
+                    Your TopUp Center
+                </a>
             </div>
-            <div class="footer-section contact-info">
-                <h2>Contact Information</h2>
-                <p>Email : <a href="mailto:ffdiamondstorebd@gmail.com" style="text-decoration: none; color: #fff;">ffdiamondstorebd@gmail.com</a></p>
-                <p>Phone : <a href="tel:+880 1781-146747" style="text-decoration: none; color: #fff;">+880 17811-46747</a></p>
-                <p>Address : <a href="https://maps.app.goo.gl/DQpiKEpmaRjnwb9U7" target="_blank" style="text-decoration: none; color: #fff;">Tarakandi, Sribordi, Sherpur, Mymensingh, Bangladesh</a></p>
-                <p>Support : <a href="https://t.me/YTC24_bot" target="_blank" style="text-decoration: none; color: #fff;">Telegram &nbsp <i class="fas fa-external-link-alt"></i></a></p>
-            </div>
-            <div class="footer-section important-links">
-                <h2>Important Links</h2>
+            <nav id="main-nav">
                 <ul>
-                    <li><a href="https://yourtopupcenter.github.io/home" id="fr">Home</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/products" id="fr">Products</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/offers" id="fr">Offer</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/reseller" id="fr">Reseller Platform</a></li>
-                    
-                    <li><a href="https://yourtopupcenter.github.io/about" id="fr">About</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/contact" id="fr">Contact Us</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/terms" id="fr">Terms and Conditions</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/privacy" id="fr">Privacy Policies</a></li>
-                    <li><a href="https://yourtopupcenter.github.io/menu" id="fr">Menu</a></li>
+                    <!-- Update hrefs to point to index.html sections or other pages -->
+                    <li><a href="index.html">হোম</a></li>
+                    <li><a href="products.html">প্রোডাক্টস</a></li>
+                    <!-- Add 'active' class to the current page link -->
+                    <li><a href="offers.html" class="active">অফার</a></li>
+                    <li><a href="#">ব্লগ</a></li>
+                    <li><a href="index.html#why-us">আমাদের সম্পর্কে</a></li>
+                    <li><a href="index.html#blogs">যোগাযোগ</a></li>
+                  
+                    <li><a href="index.html#footer-contact">U Tech</a></li>
                 </ul>
-            </div>
-            <div class="footer-section social-media">
-                <h2>Social Media</h2>
-                <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/yourtopupcenterofficial" target="_blank" ><i class="fab fa-facebook"></i></a></li>   
-                    <li><a href="https://wa.me/message/O5T2K7VX66VUP1" target="_blank"><i class="fab fa-whatsapp"></i></a></li>             
-                    <li><a href="https://www.instagram.com/yourtopupcenterofficial" target="_blank" ><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://x.com/yourtopupcenter" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.youtube.com/@techwithahofficial" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://t.me/yourtopupcenterofficial" target="_blank"><i class="fab fa-telegram"></i></a></li>
-                    <li><a href="https://www.tiktok.com/yourtopupcenter" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-                    
-                    <li><a href="https://yourtopupcenter.github.io/redirect/facebook" ><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://yourtopupcenter.github.io/redirect/whatsappgroup"><i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href="https://yourtopupcenter.github.io/redirect/telegram"><i class="fab fa-telegram"></i></a></li>
-                </ul>
+            </nav>
+             <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p id="fro">&copy; 2022 - 2024 Your TopUp Center | All Rights Reserved | V 5 | Devloper : <a href="https://alihosenofficial.github.io" target="_blank" style="color: #fff;">Ali Hosen</a></p>
+    </header>
+
+    <main>
+        <!-- Offers Section -->
+        <section id="offers-page-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-tags"></i> বিশেষ অফারসমূহ</h2>
+                <div class="filter-buttons">
+                    <!-- Reusing product filter JS requires matching class names -->
+                    <button class="active" data-filter="all"><i class="fas fa-star"></i> সকল অফার</button>
+                    <button data-filter="recharge"><i class="fas fa-mobile-alt"></i> রিচার্জ অফার</button>
+                    <button data-filter="game"><i class="fas fa-gamepad"></i> গেম অফার</button>
+                    <button data-filter="special"><i class="fas fa-calendar-check"></i> বিশেষ দিবস</button>
+                </div>
+                <!-- Reusing product-grid class name for JS compatibility -->
+                <div class="offer-grid">
+                    <!-- Offer Items - Add category classes (e.g., recharge, game, special) -->
+                    <div class="offer-item all recharge special fade-in"> <!-- Added filter classes -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxtA8iSeFzEffRULHztg0_-RLZsErrMdb_Ei6hf24esa8n9bcZQwKJrqvH&s=10" alt="টপআপ বোনাস">
+                        <div class="offer-content">
+                             <span class="offer-discount">৫% বোনাস!</span>
+                             <h3><i class="fas fa-mobile-alt"></i> প্রথম রিচার্জে বোনাস</h3>
+                            <p> প্রথমবার যেকোনো গেমের টপআপ করলেই পাচ্ছেন ৫% পর্যন্ত ইনস্ট্যান্ট বোনাস!</p>
+                            <p class="offer-validity"><i class="fas fa-calendar-alt"></i> মেয়াদ: ৩১ ডিসেম্বর, ২০২৫</p>
+                            <a href="products.html" class="btn">টপআপ করুন <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                     <div class="offer-item all game fade-in">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxtA8iSeFzEffRULHztg0_-RLZsErrMdb_Ei6hf24esa8n9bcZQwKJrqvH&s=10" alt="গেম ডিসকাউন্ট">
+                        <div class="offer-content">
+                             <span class="offer-discount">১৫% ছাড়!</span>
+                            <h3><i class="fas fa-gamepad"></i> পাবজি ইউসি-তে ছাড়</h3>
+                            <p>নির্দিষ্ট পরিমাণ পাবজি মোবাইল ইউসি কিনলেই পাচ্ছেন ফ্ল্যাট ১৫% ডিসকাউন্ট। স্টক সীমিত!</p>
+                             <p class="offer-terms"><i class="fas fa-info-circle"></i> শুধুমাত্র ৫০০ ইউসি প্যাকের উপরে প্রযোজ্য।</p>
+                            <p class="offer-validity"><i class="fas fa-calendar-alt"></i> মেয়াদ: ৩০ নভেম্বর, ২০২৫</p>
+                            <a href="products.html" class="btn">ইউসি কিনুন <i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+
+                   
+
+                     <div class="offer-item all game special fade-in">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxtA8iSeFzEffRULHztg0_-RLZsErrMdb_Ei6hf24esa8n9bcZQwKJrqvH&s=10" alt="ফ্রি ফায়ার উইকেন্ড">
+                        <div class="offer-content">
+                            <h3><i class="fas fa-gamepad"></i> ফ্রি ফায়ার উইকেন্ড ধামাকা</h3>
+                            <p>প্রতি শুক্র ও শনিবার ফ্রি ফায়ার ডায়মন্ড টপ-আপে থাকছে অতিরিক্ত বোনাস ডায়মন্ড জেতার সুযোগ।</p>
+                            <p class="offer-terms"><i class="fas fa-info-circle"></i> সর্বনিম্ন ৫০০ ডায়মন্ড টপ-আপে প্রযোজ্য।</p>
+                            <p class="offer-validity"><i class="fas fa-calendar-alt"></i> প্রতি সপ্তাহান্তে</p>
+                            <a href="products.html" class="btn">টপ-আপ করুন <i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+
+                     <!-- Add more offer items here -->
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                 <div class="footer-widget">
+                    <h4><i class="fas fa-info-circle"></i> Your TopUp Center</h4>
+                    <p>আপনার বিশ্বস্ত ডিজিটাল সেবার ঠিকানা। মোবাইল রিচার্জ, গেম টপ-আপ, বিল পেমেন্ট সহ আরো অনেক সেবা নিন সহজে ও নিরাপদে।</p>
+                    <div class="footer-social-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h4><i class="fas fa-link"></i> প্রয়োজনীয় লিংক</h4>
+                    <ul>
+           <li><a href="#"><i class="fas fa-angle-right"></i> Home</a></li>
+                        
+                        <li><a href="products.html"><i class="fas fa-angle-right"></i> Products</a></li>
+       <li><a href="#"><i class="fas fa-angle-right"></i> Offer</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Blogs</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Reseller Platfrom</a></li>
+                        <li><a href="#blogs"><i class="fas fa-angle-right"></i> About</a></li>
+                         <li><a href="#"><i class="fas fa-angle-right"></i> Contact</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Tarms and Conditions</a></li>
+                           <li><a href="#"><i class="fas fa-angle-right"></i> Privacy and Policies</a></li>
+                           
+                                     <li><a href="#"><i class="fas fa-angle-right"></i> Menu</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget" id="footer-contact">
+                    <h4><i class="fas fa-address-book"></i> যোগাযোগ</h4>
+                    <ul class="footer-contact-info">
+                       <li><i class="fas fa-map-marker-alt"></i> শ্রীবরদী, শেরপুর, ময়মনসিংহ, বাংলাদেশ</li>
+                        <li><a href="tel:+8801781146747"><i class="fas fa-phone-alt"></i> +880 1781-146747</a></li>
+                        <li><a href="mailto:ffdiamondstorebd@gmail.com"><i class="fas fa-envelope"></i> ffdiamondstorebd@gmail.com</a></li>
+                        <li><i class="fab fa-facebook-f"></i><a href="#"></a>Facebook Page Chat</li>
+                        <li><i class="fab fa-whatsapp"></i><a href="">WhatsApp</a></li>
+                          <li><i class="fab fa-telegram"></i><a href="#">Telegram</a></li>
+                         <li><i class="fas fa-clock"></i> সাপোর্ট: ২৪/৭ খোলা</li>
+                    </ul>
+                </div>
+
+                 <div class="footer-widget">
+                    <h4><i class="fas fa-envelope-open-text"></i> নিউজলেটার</h4>
+                    <p>সর্বশেষ অফার এবং আপডেটের জন্য সাইন আপ করুন।</p>
+                    <form id="newsletter-form" style="display: flex;">
+                         <input type="email" placeholder="আপনার ইমেইল" required style="flex-grow: 1; padding: 10px; border: none; border-radius: 4px 0 0 4px; font-family: var(--body-font);">
+                         <button type="submit" class="btn" style="border-radius: 0 4px 4px 0; padding: 10px 15px; font-size: 1rem; box-shadow: none;"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                 </div>
+            </div>
+
+            <div class="footer-bottom">
+                কপিরাইট © <span id="current-year"></span> Your TopUp Center. সর্বস্বত্ব সংরক্ষিত। ভার্সন : 10.0  <br>
+                ডেভেলপড উইথ <i class="fas fa-heart" style="color: #e74c3c;"></i> বাই <a href="#" target="_blank" rel="noopener noreferrer">U Tech Web Solution</a>
+            </div>
         </div>
     </footer>
-</section>
+    
+    
+    
+    <!-- Floating Support Widget -->
+    <div class="support-widget">
+        <div class="support-options" id="support-options">
+            <!-- Added data-tooltip -->
+            <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener noreferrer" class="support-option whatsapp" aria-label="WhatsApp" data-tooltip="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://m.me/YOUR_MESSENGER_USERNAME" target="_blank" rel="noopener noreferrer" class="support-option messenger" aria-label="Messenger" data-tooltip="Messenger">
+                <i class="fab fa-facebook-messenger"></i>
+            </a>
+             <a href="https://t.me/YOUR_TELEGRAM_USERNAME" target="_blank" rel="noopener noreferrer" class="support-option telegram" aria-label="Telegram" data-tooltip="Telegram">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+             <a href="tel:YOUR_PHONE_NUMBER" class="support-option call" aria-label="Call" data-tooltip="কল করুন">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+        </div>
+        <button class="support-main-btn" id="support-main-btn" aria-label="Support Options">
+             <i class="fas fa-headset"></i> <!-- Default icon -->
+             <i class="fas fa-times"></i> <!-- Icon shown when active -->
+        </button>
+    </div>
 
+    <!-- Fixed Ad Banner -->
+    <div class="fixed-ad-banner" id="fixed-ad-banner">
+        <div class="ad-content">
+            <i class="fab fa-facebook-f"></i> <!-- Ad icon -->
+            <span>Latest সব আপডেট পেতে এখুনি আমাদের <a href="#">ফেসবুক পেজ</a> ভিজিট করুন!  </span>
+        </div>
+        <button class="ad-close-btn" id="ad-close-btn" aria-label="Close Ad">
+            ×
+        </button>
+    </div>
 
+    <script>
+        // Same JavaScript as index.html/products.html for consistency
+        document.addEventListener('DOMContentLoaded', function() {
 
-<!-- End Of Footer -->
-    <script src="script.js"></script>
-    </body>
-    </html>
+            // --- Mobile Menu Toggle ---
+            const menuToggle = document.getElementById('menu-toggle');
+            const mainNav = document.getElementById('main-nav');
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', () => { /* ... toggle logic ... */
+                    mainNav.classList.toggle('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
+                });
+                mainNav.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { /* ... close logic ... */
+                    if (mainNav.classList.contains('active')) {
+                       mainNav.classList.remove('active');
+                        const icon = menuToggle.querySelector('i');
+                        icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
+                    }
+                }); });
+                document.addEventListener('click', (event) => { /* ... outside click close logic ... */
+                     if (mainNav.classList.contains('active') && !mainNav.contains(event.target) && !menuToggle.contains(event.target)) {
+                        mainNav.classList.remove('active');
+                        const icon = menuToggle.querySelector('i');
+                        icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
+                    }
+                });
+            }
+
+            // --- Header Shadow on Scroll ---
+            const body = document.body;
+            const header = document.getElementById('main-header');
+             if (header) { /* ... scroll shadow logic ... */
+                const scrollThreshold = 50;
+                 window.addEventListener('scroll', () => {
+                     if (window.scrollY > scrollThreshold) { body.classList.add('scrolled'); }
+                     else { body.classList.remove('scrolled'); }
+                 });
+             }
+
+            // --- Offer Filtering (Using same logic as Product Filtering) ---
+            // IMPORTANT: Uses '.offer-item' and '.offer-grid' assuming you adapted HTML/CSS
+            // OR uses '.product-item' and '.product-grid' if you reused those classes in HTML
+            const filterButtonsContainer = document.querySelector('.filter-buttons');
+
+            if (filterButtonsContainer) {
+                const filterButtons = filterButtonsContainer.querySelectorAll('button');
+                // Adjust selector based on the grid class name you used in HTML
+                const offerGrid = document.querySelector('.offer-grid'); // Or '.product-grid' if reused
+                 // Adjust selector based on the item class name you used in HTML
+                const offerItems = offerGrid ? offerGrid.querySelectorAll('.offer-item') : []; // Or '.product-item' if reused
+
+                if (filterButtons.length > 0 && offerItems.length > 0) {
+                    // Initially show 'all' items
+                    offerItems.forEach(item => {
+                        if(item.classList.contains('all')) {
+                            setTimeout(() => { item.classList.add('show'); }, 50); // Animate in
+                        }
+                     });
+
+                    filterButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            const filter = button.getAttribute('data-filter');
+
+                            filterButtons.forEach(btn => btn.classList.remove('active'));
+                            button.classList.add('active');
+
+                            offerItems.forEach(item => {
+                                const shouldShow = filter === 'all' || item.classList.contains(filter);
+                                const isShowing = item.classList.contains('show');
+
+                                if (shouldShow && !isShowing) {
+                                    item.classList.remove('hide');
+                                    setTimeout(() => { item.classList.add('show'); }, 10);
+                                } else if (!shouldShow && isShowing) {
+                                    item.classList.remove('show');
+                                    item.classList.add('hide');
+                                }
+                            });
+                        });
+                    });
+                }
+            }
+
+            // --- Animate on Scroll ---
+             const fadeElements = document.querySelectorAll('.fade-in');
+             if ("IntersectionObserver" in window && fadeElements.length > 0) { /* ... observer logic ... */
+                const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+                fadeElements.forEach(el => observer.observe(el));
+            } else { fadeElements.forEach(el => el.classList.add('visible')); }
+
+            // --- Set Current Year in Footer ---
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) { yearSpan.textContent = new Date().getFullYear(); }
+
+             // --- Newsletter Form Placeholder ---
+             const newsletterForm = document.getElementById('newsletter-form');
+             if(newsletterForm) { /* ... newsletter submit logic ... */
+                 newsletterForm.addEventListener('submit', (e) => {
+                     e.preventDefault();
+                     alert('ধন্যবাদ! আপনার ইমেইল সাবস্ক্রাইব করা হয়েছে (Placeholder)।');
+                     newsletterForm.reset();
+                 });
+             }
+
+        });
         
         
+        
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("DOM Loaded - Advanced Floating Elements");
+
+            // --- Standard Setup ---
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) { yearSpan.textContent = new Date().getFullYear(); }
+
+            // --- Floating Support Button Logic ---
+            const supportMainBtn = document.getElementById('support-main-btn');
+            const supportOptions = document.getElementById('support-options');
+
+            if (supportMainBtn && supportOptions) {
+                supportMainBtn.addEventListener('click', (e) => {
+                    e.stopPropagation(); // Prevent click from immediately closing via document listener
+                    console.log("Support button toggled");
+                    supportMainBtn.classList.toggle('active');
+                    supportOptions.classList.toggle('active');
+                });
+
+                // Close options if clicking outside
+                document.addEventListener('click', (event) => {
+                    if (supportOptions.classList.contains('active') &&
+                        !supportMainBtn.contains(event.target) &&
+                        !supportOptions.contains(event.target))
+                    {
+                        console.log("Clicked outside support widget - closing");
+                        supportMainBtn.classList.remove('active');
+                        supportOptions.classList.remove('active');
+                    }
+                });
+
+            } else { console.error("Support button or options element not found!"); }
+
+
+            // --- Fixed Ad Banner Logic ---
+            const adBanner = document.getElementById('fixed-ad-banner');
+            const adCloseBtn = document.getElementById('ad-close-btn');
+
+            if (adBanner && adCloseBtn) {
+                 adCloseBtn.addEventListener('click', () => {
+                     console.log("Ad close button clicked");
+                    adBanner.classList.add('hidden');
+                    // Set a flag in sessionStorage to keep it closed for the session
+                    try { // Use try-catch for potential SecurityError in sandboxed environments
+                       sessionStorage.setItem('adBannerClosed', 'true');
+                    } catch (e) {
+                       console.warn("Could not set sessionStorage item for ad banner.");
+                    }
+                 });
+
+                 // Check if ad was previously closed in this session
+                 try {
+                    if (sessionStorage.getItem('adBannerClosed') === 'true') {
+                       adBanner.style.display = 'none'; // Hide immediately, no animation needed if already closed
+                       console.log("Ad banner was previously closed in this session.");
+                    } else {
+                         // Ensure the entry animation plays only if not previously closed
+                         adBanner.style.animationPlayState = 'running'; // Explicitly start if needed
+                    }
+                 } catch (e) {
+                    console.warn("Could not access sessionStorage to check ad banner state.");
+                 }
+
+
+            } else { console.error("Ad banner or close button element not found!"); }
+
+
+            // --- Header/Menu Toggle Logic ---
+            const menuToggle = document.getElementById('menu-toggle');
+            const mainNav = document.getElementById('main-nav');
+            if (menuToggle && mainNav) {
+                 menuToggle.addEventListener('click', () => { /* ... */ });
+                 // Add other menu closing logic if needed
+            }
+
+            // --- Intersection Observer for general fade-in ---
+            const fadeElements = document.querySelectorAll('.fade-inX');
+             if ("IntersectionObserver" in window && fadeElements.length > 0) { /* ... */ }
+             else { /* Fallback */ }
+
+        }); // End DOMContentLoaded
+    </script>
+
+</body>
+</html>
